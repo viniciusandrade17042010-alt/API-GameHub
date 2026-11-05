@@ -1,0 +1,22 @@
+info:
+  name: Put_Jogador
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:3000/jogadores/1
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Ryan coelho naza",
+        "email": "ADMdaSilva@gmail.com",
+        "nickname": "RyanQQQ"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

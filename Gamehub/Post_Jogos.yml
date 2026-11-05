@@ -1,0 +1,22 @@
+info:
+  name: Post_Jogos
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/jogos
+  body:
+    type: json
+    data: |-
+      {
+        "titulo": "shalldiver",
+        "ano_lancamento": 2025,
+        "estudio_id": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: Put_jogos
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:3000/jogos/1
+  body:
+    type: json
+    data: |-
+      {
+        "titulo": "as aventuras de merda de lorena",
+        "ano_lancamento": 2025,
+        "estudio_id": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

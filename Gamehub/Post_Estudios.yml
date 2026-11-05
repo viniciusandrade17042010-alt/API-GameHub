@@ -1,0 +1,21 @@
+info:
+  name: Post_Estudios
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/estudios
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Bldep games",
+        "pais": "barsil"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
